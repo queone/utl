@@ -17,6 +17,7 @@ printf "==> And versioning => https://go.dev/doc/modules/version-numbers\n"
 go mod tidy
 go fmt
 go test ./...
+staticcheck ./...
 
 printf "\n==> grep replace go.mod:\n$Red$(grep replace go.mod)$Rst"
 printf "\n==> Last 3 tag versions:\n"
